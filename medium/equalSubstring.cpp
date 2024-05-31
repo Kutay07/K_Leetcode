@@ -1,16 +1,20 @@
 #include <iostream>
 using namespace std;
 
-class Solution {
+class Solution
+{
 public:
-	int equalSubstring(string s, string t, int maxCost) {
+	int equalSubstring(string s, string t, int maxCost)
+	{
 		int remCost = 0;
 		int start = 0;
 		int ret = 0;
-		for (int i = 0; i < s.size(); i++){
+		for (int i = 0; i < s.size(); i++)
+		{
 			remCost += abs(s[i] - t[i]);
 			ret++;
-			if (remCost > maxCost){
+			if (remCost > maxCost)
+			{
 				remCost -= abs(s[start] - t[start]);
 				start++;
 				ret--;
@@ -30,7 +34,7 @@ You want to change s to t. Changing the ith character of s to ith character of t
 
 Return the maximum length of a substring of s that can be changed to be the same as the corresponding substring of t with a cost less than or equal to maxCost. If there is no substring from s that can be changed to its corresponding substring from t, return 0.
 
- 
+
 
 Example 1:
 
@@ -51,12 +55,12 @@ Input: s = "abcd", t = "acde", maxCost = 0
 Output: 1
 Explanation: You cannot make any change, so the maximum length is 1.
 
- 
+
 
 Constraints:
 
-    1 <= s.length <= 105
-    t.length == s.length
-    0 <= maxCost <= 106
-    s and t consist of only lowercase English letters.
+	1 <= s.length <= 105
+	t.length == s.length
+	0 <= maxCost <= 106
+	s and t consist of only lowercase English letters.
 */
