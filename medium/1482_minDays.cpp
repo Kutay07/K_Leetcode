@@ -10,7 +10,6 @@ public:
         int tmp = 0;
         for (int i = 0; i < bloomDay.size(); i++)
         {
-
             if (bloomDay[i] <= day)
             {
                 tmp++;
@@ -55,6 +54,8 @@ public:
 };
 
 /*
+link: https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/description/
+
 -> 1482. Minimum Number of Days to Make m Bouquets
 Medium
 
