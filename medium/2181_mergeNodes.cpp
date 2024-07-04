@@ -12,9 +12,9 @@ class Solution
 public:
     ListNode *mergeNodes(ListNode *head)
     {
-        ListNode *dummy = new ListNode(0); // Yeni listenin başı için sahte düğüm
+        ListNode *dummy = new ListNode(0);
         ListNode *current = dummy;
-        ListNode *temp = head->next; // İlk 0'ı atla
+        ListNode *temp = head->next;
         int sum = 0;
         while (temp != nullptr)
         {
