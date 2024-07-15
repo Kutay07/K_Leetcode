@@ -59,6 +59,11 @@
         "optional": "cpp",
         "xtree": "cpp",
         "queue": "cpp",
-        "functional": "cpp"
+        "functional": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "ranges": "cpp",
+        "set": "cpp",
+        "span": "cpp"
     }
 }
